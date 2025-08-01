@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO -->
+  <meta name="description" content="Confira + DE 100 versículos bíblicos completos com explicações, ideais para estudo e reflexão diária." />
+  <meta name="keywords" content="versículos bíblicos, Bíblia, estudo bíblico, mensagens cristãs, reflexão, fé, Deus, Jesus, salvação" />
+  <meta name="author" content="Versículos Bíblicos" />
+  
+  <!-- Open Graph para redes sociais -->
+  <meta property="og:title" content="Bíblia Online - A Palavra de Deus Sem Limites" />
+  <meta property="og:description" content="Versículos com explicações para estudo e inspiração diária." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="URL_DA_IMAGEM_DESTAQUE_AQUI.jpg" />
+  <meta property="og:url" content="https://seusite.com" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  
+  <meta name="robots" content="index, follow" />
+  
+  <title>Bíblia Online - A Palavra de Deus Sem Limites</title>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #4CAF50;
+      margin-top: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      margin-top: 20px;
+    }
+
+    .propaganda-central {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ff0000;
+      color: #fff;
+      padding: 20px 30px;
+      border-radius: 12px;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+      z-index: 99999;
+      animation: blink 1s infinite;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+      cursor: pointer;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .propaganda-central a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #versiculos-container {
+      margin-top: 20px;
+    }
+
+    #data-atual {
+      font-size: 18px;
+      background: #ffdd57;
+      padding: 10px;
+      border-left: 6px solid #ff9900;
+      margin-top: 10px;
+      color: #222;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    #conteudo-unico {
+      font-size: 14px;
+      color: #777;
+      word-break: break-word;
+      background: #eee;
+      padding: 10px;
+      border-radius: 6px;
+      margin-top: 15px;
+      user-select: text;
+    }
+
+    iframe {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    #video-titulo {
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 30px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>+ de 100 Versículos Bíblicos Completos com Explicações</h1>
+    <a href='/2' style='text-decoration: none;'>
+      <button style="padding: 10px 20px; background-color: #f04e23; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        VIDEOS DO DIA
+      </button>
+    </a>
+    <p>Uma seleção dos versículos mais inspiradores para estudo e reflexão diária.</p>
+    <div id="data-atual"></div>
+  </header>
+
+  <main>
+    <!-- Propaganda dinâmica piscante -->
+    <div class="propaganda-central" id="propaganda">
+      <a href="#" target="_blank" id="propaganda-link">🔔 Clique aqui para uma surpresa divina!</a>
+    </div>
+
+    <!-- Título do vídeo -->
+    <div id="video-titulo">Título do vídeo aqui</div>
+
+    <!-- Vídeo do YouTube -->
+    <iframe id="youtube-video" width="560" height="315" allowfullscreen></iframe>
+
+    <!-- Versículos -->
+    <div id="versiculos-container"></div>
+
+    <!-- Conteúdo aleatório único -->
+    <div id="conteudo-unico"></div>
+  </main>
+
+  <footer>
+    <p>&copy;  - Versículos Bíblicos para Estudo e Reflexão</p>
+  </footer>
+
+  <script>
+    // Data atual
+    const data = new Date();
+    document.getElementById("data-atual").textContent =
+      "Atualizado em: " + data.toLocaleDateString("pt-BR");
+
+    // Geração de string única
+    function gerarConteudoUnico(length = 300) {
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*()-_=+[]{}|;:,.<>?';
+      let resultado = '';
+      for (let i = 0; i < length; i++) {
+        resultado += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return resultado;
+    }
+    document.getElementById("conteudo-unico").textContent = gerarConteudoUnico();
+
+    // Versículos
+    const versiculos = [
+      {
+        referencia: "João 3:16",
+        texto: "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito...",
+        explicacao: "Mostra o amor de Deus e o plano de salvação."
+      },
+      {
+        referencia: "Salmos 23:1",
+        texto: "O Senhor é o meu pastor; nada me faltará.",
+        explicacao: "Expressa confiança total em Deus como provedor."
+      },
+      {
+        referencia: "Filipenses 4:13",
+        texto: "Posso todas as coisas naquele que me fortalece.",
+        explicacao: "Fala da força que vem de Cristo."
+      },
+      {
+        referencia: "Provérbios 3:5",
+        texto: "Confia no Senhor de todo o teu coração...",
+        explicacao: "Confiança verdadeira é se apoiar totalmente em Deus."
+      }
+    ];
+
+    const container = document.getElementById("versiculos-container");
+    versiculos.forEach((v, i) => {
+      const bloco = document.createElement("div");
+      bloco.innerHTML = `
+        <h2>${i + 1}. ${v.referencia}</h2>
+        <p><strong>Versículo:</strong> ${v.texto}</p>
+        <p><strong>Explicação:</strong> ${v.explicacao}</p>
+        <hr>
+      `;
+      container.appendChild(bloco);
+    });
+
+    // Vídeos YouTube aleatórios com título
+    const videos = [
+      {
+        id: "3Qy1tbogsUo",
+        titulo: "Rica games volta com as lives e fala pra pararem com react, e diz que vai dividir a casa"
+      }
+    ];
+
+    const videoAleatorio = videos[Math.floor(Math.random() * videos.length)];
+    document.getElementById("youtube-video").src = `https://www.youtube.com/embed/${videoAleatorio.id}`;
+    document.getElementById("video-titulo").textContent = videoAleatorio.titulo;
+
+    // Propagandas rotativas
+    const propagandas = [
+      { url: "https://jogosantigos472302513.wordpress.com/maquinas-vps-temos-todas-as-opcoes-de-maqinas-para-voce/", texto: "🔧 Infraestrutura de qualidade para seu site!" },
+      { url: "https://hostinger.com.br?REFERRALCODE=SSNVICTORXU8", texto: "💻 Hospedagem com desconto!" },
+      { url: "https://geocredibnkvitoria.com/", texto: "💸 Crédito rápido e fácil" },
+      { url: "https://wa.me/5527998950540", texto: "📃 Laudo bancário em minutos" },
+      {url:"https://espiritosantoes-com-brprincipal.pages.dev/",texto:"NÃO PERCA ESSA OPORTUNIDADE ÚNICA"},
+      { url: "https://wa.me/5527999497001", texto: "🚗 Seguro de carro e consórcio - (27) 99949-7001" },
+      { url: "https://wa.me/5527999497001", texto: "🏠 Cobertura para temporada em Guarapari ES - Saiba +" },
+    ];
+
+    let index = 0;
+    function atualizarPropaganda() {
+      const atual = propagandas[index];
+      const link = document.getElementById("propaganda-link");
+      link.textContent = atual.texto;
+      link.href = atual.url;
+      index = (index + 1) % propagandas.length;
+    }
+    setInterval(atualizarPropaganda, 5000);
+    atualizarPropaganda();
+  </script>
+
+</body>
+</html>
