@@ -1,0 +1,333 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<title>O palhaço Sweet Tooth virou ícone da cultura pop</title>
+
+<meta name="description" content="Tudo sobre a série Twisted Metal: personagens, enredo, curiosidades e como a clássica franquia de jogos virou uma série insana cheia de ação e humor ácido." />
+<meta name="keywords" content="Twisted Metal,série Twisted Metal,PlayStation,Peacock,Anthony Mackie,Sweet Tooth,Will Arnett,adaptação de videogame,combate veicular,curiosidades,elenco,personagens,informações completas" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Equipe Fofoca com Classe" />
+
+<!-- Open Graph para redes sociais -->
+<meta property="og:title" content="Twisted Metal: Tudo Sobre a Série Inspirada nos Jogos" />
+<meta property="og:description" content="Confira tudo o que você precisa saber sobre a série Twisted Metal: do elenco ao enredo, passando por referências aos games clássicos da PlayStation." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://seudominio.com/noticias/tudo-sobre-twisted-metal" />
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/8/85/Smiley.svg" />
+<meta property="og:site_name" content="Perda de Tempo Deliciosa" />
+<meta property="article:section" content="Séries e TV" />
+<meta property="article:tag" content="Twisted Metal" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Twisted Metal: Tudo Sobre a Série de Ação, Humor e Loucura" />
+<meta name="twitter:description" content="Descubra tudo sobre a série Twisted Metal: quem é quem, como ela adapta os jogos e por que o palhaço Sweet Tooth virou ícone da cultura pop." />
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/8/85/Smiley.svg" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background-image:url('https://upload.wikimedia.org/wikipedia/pt/thumb/d/dd/Twisted_Metal_2.jpg/250px-Twisted_Metal_2.jpg');
+      background-size: 200px 200px;
+      background-repeat: repeat;
+      color: #f1f1f1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    header, footer {
+      width: 100%;
+      max-width: 1100px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #ffffff;
+      background-color: #000;
+      height: 120px;
+      width: 400px;
+    }
+
+    main {
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    #video {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 8px;
+      background: #000;
+    }
+
+    button#btn {
+      background-color: #1e88e5;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button#btn:disabled {
+      background-color: #666;
+      cursor: not-allowed;
+    }
+
+    button#btn:hover:not(:disabled) {
+      background-color: #1565c0;
+    }
+
+    footer {
+      font-size: 14px;
+      color: black;
+      margin-top: auto;
+      padding-top: 40px;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 1.5rem; }
+      iframe { height: 180px; }
+      button#btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>O palhaço Sweet Tooth virou ícone da cultura pop.</h1>
+  </header>
+
+  <main>
+    <section id="video" aria-label="Galeria de vídeos do Rica Games">
+      <!-- Os vídeos serão carregados via JavaScript -->
+    </section>
+
+    <button id="btn" aria-label="Carregar mais vídeos">Carregar mais vídeos</button>
+  </main>
+
+  <footer>
+    &copy; Descubra tudo sobre a série Twisted Metal: quem é quem, como ela adapta os jogos e por que o palhaço Sweet Tooth virou ícone da cultura pop.
+  </footer>
+
+  <script>
+    let indexe = 0;
+    const limiteporvez = 1;
+    const resultado = document.getElementById('video');
+    const botao = document.getElementById('btn');
+    let contador = 0;
+
+    const videos = [
+      // Seus links de vídeos aqui
+      "https://www.youtube.com/embed/3Q_LpV37OUU",
+      "https://www.youtube.com/embed/NeGQmeGfvSo",
+      "https://www.youtube.com/embed/0SF4_w9XKCs",
+      "https://www.youtube.com/embed/DIylE52fvAo",
+      "https://www.youtube.com/embed/69ci80PWbPI",
+      "https://www.youtube.com/embed/IHKE_V06k8c",
+      "https://www.youtube.com/embed/truhWgSvP08",
+      "https://www.youtube.com/embed/ovBjVzvVqsg",
+      "https://www.youtube.com/embed/Vld6zWORuUU",
+      "https://www.youtube.com/embed/va_lMa3TMD8",
+      "https://www.youtube.com/embed/UKPlFZe4mKY",
+      "https://www.youtube.com/embed/mHkjBoTEC38",
+      "https://www.youtube.com/embed/049Sc89BTwI",
+      "https://www.youtube.com/embed/MSU4tZ6zQUI",
+      "https://www.youtube.com/embed/3Q_LpV37OUU",
+      "https://www.youtube.com/embed/ZuR5z-muhaE",
+      "https://www.youtube.com/embed/9jYhTeSlj9M",
+      "https://www.youtube.com/embed/69ci80PWbPI",
+      "https://www.youtube.com/embed/w3hvvEJxfCU",
+      "https://www.youtube.com/embed/eCZJCwFnIaY",
+      "https://www.youtube.com/embed/MHfdQsb5ASE",
+      "https://www.youtube.com/embed/H2VkW5-2pKA",
+      "https://www.youtube.com/embed/k3KhKcgoDiI",
+      "https://www.youtube.com/embed/Bp79N9pyujk",
+      "https://www.youtube.com/embed/fthAj-ZMRus",
+      "https://www.youtube.com/embed/DIylE52fvAo",
+      "https://www.youtube.com/embed/2dnlyUeGK8Y",
+      "https://www.youtube.com/embed/0SF4_w9XKCs",
+      "https://www.youtube.com/embed/8UpX_OH-M8U",
+      "https://www.youtube.com/embed/truhWgSvP08",
+      "https://www.youtube.com/embed/UKPlFZe4mKY",
+      "https://www.youtube.com/embed/NDoAzOLuUeo",
+      "https://www.youtube.com/embed/kFovo_HaNg8",
+      "https://www.youtube.com/embed/va_lMa3TMD8",
+      "https://www.youtube.com/embed/OLP09PrN2w8",
+      "https://www.youtube.com/embed/2gxwbRSZws8",
+      "https://www.youtube.com/embed/J7NpKIoIUr8",
+      "https://www.youtube.com/embed/kXAydDg7XjE",
+      "https://www.youtube.com/embed/g0dVOo-W2PY",
+      "https://www.youtube.com/embed/2ppVvAgxu8w",
+      "https://www.youtube.com/embed/2gxwbRSZws8",
+      "https://www.youtube.com/embed/XiHGcACgoZc",
+      "https://www.youtube.com/embed/VV5r3uLkvI4",
+      "https://www.youtube.com/embed/Ws6QTIZkJ4U",
+      "https://www.youtube.com/embed/RI0j-aE7RSU",
+      "https://www.youtube.com/embed/7hi1aW6dGD8",
+      "https://www.youtube.com/embed/u4MZMI9bACM",
+      "https://www.youtube.com/embed/d4z3PNgyB9g",
+      "https://www.youtube.com/embed/G8dah6MBUIQ",
+      "https://www.youtube.com/embed/vk9YOkgfVaM",
+      "https://www.youtube.com/embed/VB-VR4whWog",
+      "https://www.youtube.com/embed/tAp2ev0QluY",
+      "https://www.youtube.com/embed/J7hJQQr7Rco"
+
+
+    ];
+
+    function criaIframe(src, width = 300, height = 300) {
+      const iframe = document.createElement('iframe');
+      iframe.src = src;
+      iframe.width = width;
+      iframe.height = height;
+      iframe.setAttribute('frameborder', '0');
+      iframe.setAttribute('allowfullscreen', '');
+      return iframe;
+    }
+
+    botao.onclick = function () {
+      let final = indexe + limiteporvez;
+
+      for (; indexe < final && indexe < videos.length; indexe++) {
+        contador++;
+        let iframe = criaIframe(videos[indexe]);
+        resultado.appendChild(iframe);
+
+        if (contador === 1) {
+          const div = document.createElement('div');
+          div.innerHTML = `
+            <iframe src="https://espiritosantoes-com-brprincipal.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+            <a href="https://espiritosantoes-com-brprincipal.pages.dev/" style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">
+              ABRIR TELA CHEIA
+            </a>`;
+          resultado.appendChild(div);
+        } else if (contador === 2) {
+          const div = document.createElement('div');
+          div.innerHTML = `
+            <iframe src="https://encurtadorko.pages.dev/" width="350" height="500" frameborder="0" allowfullscreen></iframe>
+            <a href="http://www.espiritosanto-es.com.br/cloudflare" style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">
+              ABRIR TELA CHEIA
+            </a>`;
+          resultado.appendChild(div);
+        } else if (contador === 4) {
+          const div = document.createElement('div');
+          div.innerHTML = `
+            <iframe src="https://espiritosantoes-com-brprincipal.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+            <a href="https://espiritosantoes-com-brprincipal.pages.dev/" style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">
+              ABRIR TELA CHEIA
+            </a>`;
+          resultado.appendChild(div);
+        } else if (contador === 5) {
+          const div = document.createElement('div');
+          div.innerHTML = `
+            <iframe src="https://conteudo01.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+            <a href="https://conteudo01.pages.dev/" style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">
+              ABRIR TELA CHEIA
+            </a>`;
+          resultado.appendChild(div);
+          contador = 0;
+        }
+      }
+
+      if (indexe >= videos.length) {
+        botao.disabled = true;
+        botao.textContent = 'Chegamos no limite já';
+      }
+    };
+  </script>
+  <script>
+function mudar() {
+  const coresDeFundo = [
+      "red",
+  "crimson",
+  "darkred",
+  "orangered",
+  "orange",
+  "gold",
+  "yellow",
+  "lime",
+  "limegreen",
+  "green",
+  "forestgreen",
+  "mediumspringgreen",
+  "springgreen",
+  "cyan",
+  "aqua",
+  "deepskyblue",
+  "dodgerblue",
+  "blue",
+  "mediumblue",
+  "navy",
+  "purple",
+  "indigo",
+  "blueviolet",
+  "darkviolet",
+  "violet",
+  "fuchsia",
+  "magenta",
+  "hotpink",
+  "deeppink",
+  "pink",
+  "salmon",
+  "tomato",
+  "chocolate",
+  "firebrick",
+  "darkorange",
+    "indianred",
+    "papayawhip", "peachpuff", "peru", "plum", "powderblue", "rebeccapurple", "rosybrown",
+  "royalblue", "saddlebrown", "salmon", "sandybrown", "seagreen", "seashell", "sienna",
+  "skyblue", "slateblue", "slategray", "snow", "springgreen", "steelblue", "tan",
+  "teal", "thistle", "tomato", "turquoise", "violet", "wheat", "whitesmoke", "yellowgreen",
+    "red",
+    "white",
+    "indianred", "red", "white", "blue", "green", "yellow", "orange", "purple", "pink",
+  "gold", "silver", "gray", "black", "brown", "coral", "crimson", "cyan", "darkblue",
+  "darkcyan", "darkgoldenrod", "darkgray", "darkgreen", "darkkhaki", "darkmagenta",
+  "darkolivegreen", "darkorange", "darkorchid", "darkred", "darksalmon", "darkseagreen",
+  "darkslateblue", "darkslategray", "darkturquoise", "darkviolet", "deeppink", "deepskyblue",
+  "dodgerblue", "firebrick", "floralwhite", "forestgreen", "fuchsia", "gainsboro",
+  "ghostwhite", "greenyellow", "hotpink", "indigo", "ivory", "khaki", "lavender",
+  "lawngreen", "lemonchiffon", "lightblue", "lightcoral", "lightcyan", "lightgoldenrodyellow",
+  "lightgray", "lightgreen", "lightpink", "lightsalmon", "lightseagreen", "lightskyblue",
+  "lightslategray", "lightsteelblue", "lightyellow", "lime", "limegreen", "linen",
+  "magenta", "mediumaquamarine", "mediumblue", "mediumorchid", "mediumpurple", "mediumseagreen",
+  "mediumslateblue", "mediumspringgreen", "mediumturquoise", "mediumvioletred", "midnightblue",
+  "mintcream", "mistyrose", "moccasin", "navajowhite", "navy", "oldlace", "olivedrab",
+  "orange", "orangered", "orchid", "palegoldenrod", "palegreen", "paleturquoise", "palevioletred",
+  "papayawhip", "peachpuff", "peru", "plum", "powderblue", "rebeccapurple", "rosybrown",
+  ];
+
+  const indiceAleatorio = Math.floor(Math.random() * coresDeFundo.length);
+  document.body.style.backgroundColor = coresDeFundo[indiceAleatorio];
+}
+
+
+
+   
+  </script>
+
+</body>
+</html>
