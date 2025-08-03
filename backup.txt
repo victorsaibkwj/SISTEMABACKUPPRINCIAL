@@ -47,7 +47,8 @@
       "https://geocredibnkvitoria.com/",
       "https://www.larissasaib.com.br/",
       "https://espiritosantoes-com-brprincipal.pages.dev/12",
-      "https://espiritosantoes-com-brprincipal.pages.dev/33"
+      "https://espiritosantoes-com-brprincipal.pages.dev/33",
+      "30.html"
     ];
 
     const linkSorteado = links[Math.floor(Math.random() * links.length)];
