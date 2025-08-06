@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Piadas com Áudio - Divirta-se com Piadas Engraçadas e Narradas</title>
+
+    <meta name="description" content="Ouça piadas engraçadas narradas em português! Clique no botão e divirta-se com piadas aleatórias com voz automatizada. Humor leve e divertido.">
+    <meta name="keywords" content="piadas, piadas com áudio, piadas engraçadas, humor, diversão, narrador, voz, português, web app de piadas">
+    <meta name="author" content="saibvictor">
+
+    <!-- Open Graph para redes sociais -->
+    <meta property="og:title" content="Piadas com Áudio">
+    <meta property="og:description" content="Dê boas risadas com piadas engraçadas narradas em português!">
+    
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Piadas com Áudio">
+    <meta name="twitter:description" content="Clique e ouça piadas narradas com voz automatizada. Ria sem parar!">
+    
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: RED;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 12px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        #piada {
+            margin-top: 30px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>😂 Piadas com Áudio</h1>
+    
+    <button onclick="contarPiada()">Ouvir uma piada</button>
+    <div id="piada"></div>
+    <script>
+        const piadas = [
+                "Por que o computador foi ao médico? Porque ele estava com um vírus!",
+                "Qual é o cúmulo do eletricista? Não ter tomada de decisão.",
+                "Por que a impressora foi demitida? Porque ela estava fora de linha.",
+                "Sabe por que o jacaré tirou o filho da escola? Porque ele réptil de ano!",
+                "O que o tomate foi fazer no banco? Tirar extrato.",
+                "Por que o computador foi ao médico? Porque ele estava com um vírus!",
+                "Qual é o cúmulo do eletricista? Não ter tomada de decisão.",
+                "Por que a impressora foi demitida? Porque ela estava fora de linha.",
+                "Sabe por que o jacaré tirou o filho da escola? Porque ele réptil de ano!",
+                "O que o tomate foi fazer no banco? Tirar extrato.",
+                "Por que o lápis foi pra aula? Porque ele queria estar afiado.",
+                "Como o oceano se despede? Ele dá uma onda.",
+                "O que o zero disse pro oito? Belo cinto!",
+                "Por que o relógio não passa fome? Porque ele sempre tem um ponteiro.",
+                "Por que a bicicleta caiu? Porque estava duas rodas da cara.",
+                "O que a parede disse pro quadro? Que moldura linda!",
+                "Por que o livro se deu mal na entrevista? Porque não tinha nenhuma experiência no assunto.",
+                "Qual é o cúmulo do alfaiate? Perder a linha.",
+                "Por que o celular foi fazer terapia? Porque ele não conseguia se conectar com ninguém.",
+                "O que o chão disse pro tapete? Você me cobre hoje?"
+        ];
+
+        function contarPiada() {
+            const index = Math.floor(Math.random() * piadas.length);
+            const piada = piadas[index];
+            document.getElementById("piada").textContent = piada;
+
+            // Fala a piada com voz do navegador
+            const speech = new SpeechSynthesisUtterance(piada);
+            speech.lang = 'pt-BR';
+            speech.pitch = 1;
+            speech.rate = 1;
+            speech.volume = 1;
+            speechSynthesis.speak(speech);
+        }
+    </script>
+    
+
+ <div style="position:fixed;bottom:20px;right:20px;width:90vw;max-width:350px;height:70vh;max-height:500px;z-index:9999;box-shadow:0 0 15px rgba(0,0,0,0.3);">
+      <button onclick="this.parentElement.style.display='none'" style="position:absolute;top:-10px;right:-10px;background:red;color:white;border:none;border-radius:50%;width:25px;height:25px;font-weight:bold;cursor:pointer;z-index:10000;">×</button>
+      <iframe id="iframe" src="" title="Site Flutuante" style="width:100%;height:100%;border:none;"></iframe>
+    </div>
+<script>
+    // Lista de iframes confiáveis ou controlados
+    const iframes = [
+      "https://geocredibnkvitoria.com/",
+      "https://chamada5.wordpress.com/2025/08/05/sua-casa-e-seu-carro-representam-muito-mais-do-que-bens/",
+      "https://espiritosantoes-com-brprincipal.pages.dev/",
+      "https://chamada5.wordpress.com/2025/08/02/dokehost-tudo-a-respeito/",
+      "https://sistemabackupprincial.pages.dev/48",
+      "https://sistemabackupprincial.pages.dev/",
+      "https://chamada5.wordpress.com/2025/07/08/vps-avancado/"
+    ];
+
+    // Escolher um iframe aleatório
+    const iframeIndex = Math.floor(Math.random() * iframes.length);
+    const iframeUrl = iframes[iframeIndex];
+    document.getElementById('iframe').src = iframeUrl;
+  </script>
+</body>
+</html>
