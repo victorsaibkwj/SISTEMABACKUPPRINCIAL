@@ -98,7 +98,8 @@
       "https://chamada5.wordpress.com/2025/08/02/dokehost-tudo-a-respeito/",
       "https://sistemabackupprincial.pages.dev/48",
       "https://sistemabackupprincial.pages.dev/",
-      "https://chamada5.wordpress.com/2025/07/08/vps-avancado/"
+      "https://chamada5.wordpress.com/2025/07/08/vps-avancado/",
+      "https://br.pinterest.com/internet6g/"
     ];
 
     // Escolher um iframe aleatório
